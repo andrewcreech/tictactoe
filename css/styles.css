@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	background-color: #e5ba73;
+	background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23263238' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+	color: #263238;
+	font-family: 'Nunito', sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.menu {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	background: #263238;
+	width: 400px;
+	height: 400px;
+	margin-left: -10px;
+	margin-top: -10px;
+	padding: 30px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	z-index: 1000;
+}
+.menu .square {
+	display: inline-block;
+	vertical-align: middle;
+	color: #263238;
+	
+}
+.menu .square:hover {
+	cursor: pointer;
+}
+
+.menu .square span {
+	bottom: 0;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.menu .square span:hover{
+	cursor: pointer;
+}
+
+.game {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+	min-width: 400px;
+	width: 400px;
+	height: 400px;
+	background: #263238;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.square {
+	width: 120px;
+	height: 120px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	overflow: hidden;
+	background: #CFD8DC;
+	border-radius: 10px;
+	-webkit-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+}
+
+.choose-player:hover {
+	-webkit-box-shadow: 0 0 0 5px #e5ba73;
+	        box-shadow: 0 0 0 5px #e5ba73;
+}
+
+.x {
+	background: #E57373;
+}
+
+.o {
+	background: #29B6F6;
+}
+
+.open-square:hover {
+	background: white;
+	cursor: pointer;
+}
+
+.square span {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	position: relative;
+	bottom: 10px;
+	font-size: 150px;
+	line-height: 100px;
+	text-overflow: clip;
+}
+.square span:hover {
+	cursor: default;
+}
